@@ -3,8 +3,8 @@ song2 = "";
 
 function preload()
 {
-    song1 = loadSound("Faded.mp3");
-    song2 = loadSound("Darkside.mp3");
+    song1 = loadSound('Faded.mp3');
+    song2 = loadSound('Darkside.mp3');
 }
 
 function setup()
@@ -15,7 +15,7 @@ function setup()
     video = createCapture(VIDEO);
     video.hide();
 
-    poseNet = ml5.poseNet(video,modelLoaded);
+    poseNet = ml5.poseNet(video, modelLoaded());
     poseNet.on('pose',gotPoses);
 }
 
