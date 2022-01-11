@@ -54,7 +54,7 @@ function gotPoses(results)
 
 function draw()
 {
-    image(video,0,0,600,500);
+    image(video,0,0,450,350);
     song_status = song1.isPlaying();
     fill("#FF0000");
     stroke("#FF0000");
